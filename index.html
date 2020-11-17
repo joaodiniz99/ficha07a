@@ -7,12 +7,39 @@
     <style>
       .container {
         display: grid;
-        grid-template-rows: 150px 150px;
-        grid-template-columns: 150px 150px 150px;
+        grid-template-rows: repeat(2, 150px);
+        grid-template-columns: repeat(2, 150px) 200px;
+
+        row-gap: 10px;
+        column-gap: 20px;
 
         width: 1000px;
         margin: 30px auto;
         background-color: #eee;
+      }
+      .item {
+        font-size: 2.3rem;
+        font-weight: 800;
+        color: white;
+        padding: 15px;
+      }
+      .item--1 {
+        background-color: red;
+      }
+      .item--2 {
+        background-color: green;
+      }
+      .item--3 {
+        background-color: purple;
+      }
+      .item--4 {
+        background-color: rgb(226, 171, 180);
+      }
+      .item--5 {
+        background-color: blue;
+      }
+      .item--6 {
+        background-color: brown;
       }
     </style>
   </head>
