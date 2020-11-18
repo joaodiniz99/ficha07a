@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        gap: 10px;
+        width: 1000px;
+        margin: 30px auto;
+      }
+      .container > header {
+        grid-column: 1/-1;
+      }
+      .item {
+        background-color: red;
+        color: white;
+        font-weight: 800;
+        padding: 30px;
+      }
+      .main-content {
+        grid-column: 1/-2;
+      }
+      .sidebar {
+        
+      }
+      .container > footer {
+        grid-column: 1/-1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="item">
+        Header
+      </header>
+      <div class="item small-box--1">Small box 1</div>
+      <div class="item small-box--2">Small box 2</div>
+      <div class="item small-box--3">Small box 3</div>
+      <div class="item sidebar">Sidebar</div>
+      <div class="item main-content">Main-content</div>
+      <footer class="item">
+        Footer
+      </footer>
+    </div>
+  </body>
+</html>
